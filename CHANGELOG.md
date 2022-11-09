@@ -4,12 +4,12 @@
 ### Improvements
 
 - Bump UI Version
-  - [Argon Dashboard](https://www.creative-tim.com/product/argon-dashboard?AFFILIATE=128200) v2.0.4
+  - [Dashboard](https://www.creative-tim.com/product/argon-dashboard?AFFILIATE=128200) v2.0.4
 
 ## [1.0.4] 2022-06-09
 ### Improvements
 
-- Built with [Argon Dashboard Generator](https://appseed.us/generator/argon-dashboard/)
+- Built with [Dashboard Generator](https://appseed.us/generator/argon-dashboard/)
   - Timestamp: `2022-06-09 17:45`
 
 ## [1.0.3] 2022-01-16

@@ -9,3 +9,5 @@ accesslog = '-'
 loglevel = 'debug'
 capture_output = True
 enable_stdio_inheritance = True
+# forwarded_allow_ips = '*'
+# secure_scheme_headers = {'X-FORWARDED-PROTO': 'https'}

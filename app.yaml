@@ -1,0 +1,28 @@
+# [START django_app]
+runtime: python
+env: flex
+# entrypoint: gunicorn -b :$PORT core.wsgi
+entrypoint: gunicorn -c gunicorn-cfg.py -b :$PORT core.wsgi
+
+runtime_config:
+  python_version: 3.7
+  
+handlers:
+# Tel GAE where are Django static assets located
+- url: /apps/assets
+  static_dir: 'static/assets'
+# Route everything else to the main app
+- url: /.*
+  script: auto
+  # secure: always
+# [END django_app]
+
+# manual_scaling:
+#   instances: 1
+# resources:
+#   cpu: 1
+#   memory_gb: 0.5
+#   disk_size_gb: 10
+
+env_variables:
+    APPENGINE_URL: https://starry-axis-350301.uc.r.appspot.com
